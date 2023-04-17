@@ -1,13 +1,13 @@
 {
 	"info": {
-		"_postman_id": "a7fa5257-7c80-4a66-944e-c25420a1d0cd",
+		"_postman_id": "ff61c8de-df52-45c7-b565-3f37ceb8b0b3",
 		"name": "FAZZ013",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "18051667"
 	},
 	"item": [
 		{
-			"name": "Create User",
+			"name": "Create Product",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -15,50 +15,50 @@
 					"mode": "urlencoded",
 					"urlencoded": [
 						{
-							"key": "name",
-							"value": "user3",
+							"key": "product_name",
+							"value": "Blackberry Dakota",
 							"type": "text"
 						},
 						{
-							"key": "email",
-							"value": "user3@nyahoo.com",
+							"key": "product_price",
+							"value": "600000",
 							"type": "text"
 						},
 						{
-							"key": "username",
-							"value": "@user3",
+							"key": "description",
+							"value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 							"type": "text"
 						}
 					]
 				},
 				"url": {
-					"raw": "http://localhost:8000/users",
+					"raw": "http://localhost:8000/products",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"users"
+						"products"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Get All Users",
+			"name": "Get All Products",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/users",
+					"raw": "http://localhost:8000/products",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"users"
+						"products"
 					]
 				}
 			},
@@ -70,20 +70,20 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/users/:id",
+					"raw": "http://localhost:8000/products/:id",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"users",
+						"products",
 						":id"
 					],
 					"variable": [
 						{
 							"key": "id",
-							"value": "1"
+							"value": "41"
 						}
 					]
 				}
@@ -99,37 +99,37 @@
 					"mode": "urlencoded",
 					"urlencoded": [
 						{
-							"key": "name",
+							"key": "product_name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "product_price",
 							"value": "",
 							"type": "text"
 						},
 						{
-							"key": "email",
-							"value": "",
-							"type": "text"
-						},
-						{
-							"key": "username",
-							"value": "asss",
+							"key": "description",
+							"value": "cek",
 							"type": "text"
 						}
 					]
 				},
 				"url": {
-					"raw": "http://localhost:8000/users/:id",
+					"raw": "http://localhost:8000/products/:id",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"users",
+						"products",
 						":id"
 					],
 					"variable": [
 						{
 							"key": "id",
-							"value": "90"
+							"value": "4"
 						}
 					]
 				}
@@ -142,20 +142,20 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/users/:id",
+					"raw": "http://localhost:8000/products/:id",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"users",
+						"products",
 						":id"
 					],
 					"variable": [
 						{
 							"key": "id",
-							"value": "2"
+							"value": "6"
 						}
 					]
 				}
